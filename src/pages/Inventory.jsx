@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { API_URL } from './config';
+import { API_URL } from "../pages/config.js";
 
 export default function Inventory({ onBack, token, filter = 'all' , title = 'Inventory' }) {
     const [assets, setAssets] = useState([]);

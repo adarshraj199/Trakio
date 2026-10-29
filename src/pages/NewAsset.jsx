@@ -1,4 +1,4 @@
-import { API_URL } from "./config";
+import { API_URL } from "../pages/config.js";
 
 export default function NewAsset({ onBack, token }) {
 
