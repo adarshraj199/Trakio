@@ -15,7 +15,12 @@ if (!process.env.JWT_SECRET) {
   throw new Error('JWT_SECRET is missing from .env');
 }
 app.use(cors());
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://trakio-web.onrender.com'
+  ]
+}));
 app.use(express.json());
 
 app.get('/api/health', (req, res) => res.json({ message: 'Trakio API is working' }));
