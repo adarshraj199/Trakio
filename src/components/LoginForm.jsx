@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { API_URL } from '../config.js';
+import { API_URL } from "../pages/config.js";
 
 export default function LoginForm({ role, onLogin }) {
   const [email, setEmail] = useState('')
